@@ -1,0 +1,21 @@
+{
+  "name": "COMP 311 RV32I",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-vscode.cpptools"],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "containerEnv": {
+    "COMP311_ARCH": "rv32i",
+    "COMP311_ABI": "ilp32"
+  },
+  "postCreateCommand": "chmod +x scripts/* && sudo ln -sf ${containerWorkspaceFolder}/scripts/311-compile /usr/local/bin/311-compile && sudo ln -sf ${containerWorkspaceFolder}/scripts/311-assemble /usr/local/bin/311-assemble && sudo ln -sf ${containerWorkspaceFolder}/scripts/311-check /usr/local/bin/311-check && sudo ln -sf ${containerWorkspaceFolder}/scripts/311-submit-check /usr/local/bin/311-submit-check"
+}
