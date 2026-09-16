@@ -1,0 +1,12 @@
+schema: "classroom50/repo-config/v1"
+classroom: "comp311-fa26"
+assignment: "comp311-fa26-lab1"
+owner:
+  username: "Nathaniel-nsto"
+  id: 230294506
+  accepted_at: "2026-09-16T20:23:17Z"
+source:
+  owner: "comp311-fall26"
+  owner_id: 328892911
+  repo: "comp311-lab1-template"
+  branch: "main"
