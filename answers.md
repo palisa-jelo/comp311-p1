@@ -5,7 +5,7 @@ Your name:
 - Nathaniel
 - Stoner
 
-Replace every `[REPLACED]` and `TBD` below before submission.
+Replace every `[REPLACED]` and `REPLACED` below before submission.
 
 ---
 
