@@ -172,10 +172,13 @@ scale_shift:
 
 | Version | Optimization | Total static instructions in function | Loads / Stores | Arithmetic / Logic | Branches / Jumps |
 |---|---:|---:|---:|---:|---:|
-| `scale_add` | `-O0` | 22 | 12 | 7 | 3 |
+| `scale_add` | `-O0` | 22 | 11 | 8 | 3 |
 | `scale_shift` | `-O0` | 10 | 4 | 5 | 1 |
 | `scale_add` | `-O2` | 2 | 0 | 1 | 1 |
 | `scale_shift` | `-O2` | 2 | 0 | 1 | 1 |
+
+If loading an immediate is in reality implemented as an arthmetic operation, then scale_add might should be 22 | 12 | 7 | 8
+but I guess li is still 'load'
 
 ## 1. What major differences do you observe between `-O0` and `-O2`?
 
